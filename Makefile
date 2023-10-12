@@ -20,9 +20,9 @@ override LDFLAGS  += -Wl,-rpath=${CUDAPATH}/lib
 override LDFLAGS  += -lcublas
 override LDFLAGS  += -lcudart
 
-COMPUTE      ?= 50
-CUDA_VERSION ?= 11.8.0
-IMAGE_DISTRO ?= ubi8
+COMPUTE      ?= 80
+CUDA_VERSION ?= 12.2.0
+IMAGE_DISTRO ?= ubuntu22.04
 
 override NVCCFLAGS ?=
 override NVCCFLAGS += -I${CUDAPATH}/include
